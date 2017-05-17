@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<database name="procurement">
+		<table_structure name="bulletin_nest">
+			<field Field="info_uuid" Type="varchar(36)" Null="NO" Key="PRI" Extra="" Comment="hash化唯一id" />
+			<field Field="info_pk" Type="int(11)" Null="NO" Key="UNI" Extra="" Comment="标讯公告信息主键" />
+			<field Field="pro_pk" Type="int(11)" Null="NO" Key="" Extra="" Comment="标讯项目信息表主键" />
+			<field Field="location" Type="varchar(6)" Null="NO" Key="" Extra="" Comment="" />
+			<field Field="budget" Type="decimal(16,2)" Null="YES" Key="" Extra="" Comment="预算" />
+			<field Field="create_time" Type="datetime(6)" Null="NO" Key="" Default="CURRENT_TIMESTAMP(6)" Extra="" Comment="" />
+			<field Field="is_inbuild" Type="char(1)" Null="YES" Key="" Default="0" Extra="" Comment="是否拟在建,1表示为拟在建" />
+			<field Field="info_url" Type="varchar(250)" Null="NO" Key="" Extra="" Comment="标讯网址" />
+			<field Field="info_type" Type="varchar(6)" Null="NO" Key="" Extra="" Comment="公告类型:010001招标公告;010002更正公告;010003中标公告;010004废标公告;010005其他公告;010006比选公告" />
+			<field Field="source" Type="varchar(60)" Null="YES" Key="" Extra="" Comment="标讯来源" />
+			<field Field="method" Type="varchar(6)" Null="YES" Key="" Extra="" Comment="采购方式:000001公开招标;000002邀请招标;000003竞争性谈判;000004询价采购;000005单一来源;" />
+			<field Field="title" Type="varchar(200)" Null="NO" Key="" Extra="" Comment="标讯标题" />
+			<field Field="project_id" Type="varchar(100)" Null="YES" Key="" Extra="" Comment="标讯项目编号" />
+			<field Field="release_date" Type="varchar(10)" Null="NO" Key="" Extra="" Comment="发布时间YYYY-MM-DD" />
+			<field Field="purchase_date" Type="varchar(10)" Null="YES" Key="" Extra="" Comment="购买标书截止时间(YYYY-MM-DD)" />
+			<field Field="deadline_date" Type="varchar(10)" Null="YES" Key="" Extra="" Comment="投标截止时间(YYYY-MM-DD)" />
+			<field Field="open_date" Type="varchar(10)" Null="YES" Key="" Extra="" Comment="开标时间(YYYY-MM-DD)" />
+			<field Field="open_address" Type="varchar(100)" Null="YES" Key="" Extra="" Comment="开标地点" />
+			<field Field="op_time" Type="datetime(6)" Null="NO" Key="" Extra="" Comment="" />
+			<field Field="abandon_reason" Type="varchar(200)" Null="YES" Key="" Extra="" Comment="" />
+			<field Field="tender" Type="varchar(60)" Null="YES" Key="" Extra="" Comment="" />
+			<field Field="agency" Type="varchar(60)" Null="YES" Key="" Extra="" Comment="" />
+			<field Field="expert" Type="varchar(200)" Null="YES" Key="" Extra="" Comment="" />
+			<field Field="contract_id" Type="varchar(100)" Null="YES" Key="" Extra="" Comment="" />
+			<field Field="contact" Type="varchar(500)" Null="YES" Key="" Extra="" Comment="标讯联系方式" />
+			<field Field="brand_tags" Type="varchar(1000)" Null="YES" Key="" Default="" Extra="" Comment="" />
+			<field Field="qualification" Type="varchar(2000)" Null="YES" Key="" Extra="" Comment="投标人资质" />
+			<field Field="custom_tags" Type="varchar(2000)" Null="YES" Key="" Extra="" Comment="" />
+			<field Field="custom_tags_pro" Type="varchar(2000)" Null="YES" Key="" Extra="" Comment="" />
+			<field Field="categories" Type="varchar(2000)" Null="YES" Key="" Extra="" Comment="" />
+			<field Field="categories_pro" Type="varchar(2000)" Null="YES" Key="" Extra="" Comment="" />
+			<field Field="related_orgs" Type="text" Null="YES" Key="" Extra="" Comment="" />
+			<field Field="related_orgs_pro" Type="mediumtext" Null="YES" Key="" Extra="" Comment="" />
+			<field Field="subject_matter" Type="mediumtext" Null="YES" Key="" Extra="" Comment="投标人标的" />
+			<field Field="content" Type="mediumtext" Null="YES" Key="" Extra="" Comment="" />
+			<field Field="content_format" Type="mediumtext" Null="YES" Key="" Extra="" Comment="" />
+			<key Table="bulletin_nest" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="info_uuid" Collation="A" Cardinality="17898590" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+			<key Table="bulletin_nest" Non_unique="0" Key_name="info_pk_UNIQUE" Seq_in_index="1" Column_name="info_pk" Collation="A" Cardinality="17898590" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+			<options Name="bulletin_nest" Engine="InnoDB" Version="10" Row_format="Compressed" Rows="17898590" Avg_row_length="12767" Data_length="228520198144" Max_data_length="0" Index_length="0" Data_free="14155776" Create_time="2017-05-01 14:41:32" Collation="utf8_general_ci" Create_options="row_format=COMPRESSED" Comment="标讯公告简化明细表" />
+	       	</table_structure>
+	    		<table_data name="bulletin_nest">
+					<row>
+						<field name="info_uuid">53769ef2d2a32b5b9a03473e10785a11</field><field name="info_pk">3158404</field>
+						<field name="pro_pk">7927329</field>
+						<field name="location">360100</field>
+						<field name="budget">323600.00</field>
+						<field name="create_time">2015-05-06 21:13:01.708878</field>
+						<field name="is_inbuild">0</field>
+						<field name="info_url">http://ggzy.jiangxi.gov.cn/jxzbw/ZtbInfo/ZBGG_Detail.aspx?InfoID=1053272d-25f4-4975-856d-f8e00c03deac&amp;CategoryNum=002004004</field>
+						<field name="info_type">010004</field>
+						<field name="source">江西省公共资源交易网</field>
+						<field name="method">000003</field>
+						<field name="title">深圳市华昊咨询有限公司关于江西省南昌工程学院财经实验中心及招生机房设备采购项目(招标编号：HHZBJX15018-A-2)第二次竞争性谈判废标公告</field>
+						<field name="project_id">HHZBJX15018-A-2)第二次</field>
+						<field name="release_date">2015-05-06</field>
+						<field name="purchase_date" xsi:nil="true" />
+						<field name="deadline_date">2196-08-09</field>
+						<field name="open_date" xsi:nil="true" />
+						<field name="open_address" xsi:nil="true" />
+						<field name="op_time">2016-04-10 03:23:57.731168</field>
+						<field name="abandon_reason">有效供应商不足三家</field>
+						<field name="tender">南昌工程学院</field>
+						<field name="agency">深圳市华昊咨询有限公司</field>
+						<field name="expert" xsi:nil="true" />
+						<field name="contract_id" xsi:nil="true" />
+						<field name="contact">[{&quot;org_name&quot;:&quot;&quot;,&quot;phone&quot;:&quot;0791-86899377&quot;,&quot;name&quot;:&quot;刘霞&quot;},{&quot;org_name&quot;:&quot;&quot;,&quot;phone&quot;:&quot;0791-82196892&quot;,&quot;name&quot;:&quot;南昌工程学院&quot;}]</field>
+						<field name="brand_tags" xsi:nil="true" />
+						<field name="qualification" xsi:nil="true" />
+						<field name="custom_tags">[&quot;TFPC08&quot;,&quot;TFPCSB&quot;]</field>
+						<field name="custom_tags_pro">[&quot;IT0101&quot;,&quot;TFPCSB&quot;,&quot;TFPC08&quot;]</field>
+						<field name="categories" xsi:nil="true" />
+						<field name="categories_pro">[&quot;030301&quot;,&quot;030604&quot;,&quot;A00015&quot;,&quot;A00092&quot;,&quot;A00109&quot;,&quot;C00012&quot;]</field>
+						<field name="related_orgs">[{&quot;org_name&quot;:&quot;南昌工程学院&quot;,&quot;org_uuid&quot;:&quot;22dbef2a-5c44-e245-97a5-3479cf442eee&quot;,&quot;win_amount&quot;:null,&quot;org_role&quot;:&quot;ER0001&quot;},{&quot;org_name&quot;:&quot;深圳市华昊咨询有限公司&quot;,&quot;org_uuid&quot;:&quot;6dabd414-490e-1330-d302-8a2b00d37b6e&quot;,&quot;win_amount&quot;:null,&quot;org_role&quot;:&quot;ER0003&quot;}]</field>
+						<field name="related_orgs_pro">[{&quot;org_name&quot;:&quot;南昌工程学院&quot;,&quot;org_uuid&quot;:&quot;22dbef2a-5c44-e245-97a5-3479cf442eee&quot;,&quot;org_role&quot;:&quot;ER0001&quot;,&quot;win_amount&quot;:null},{&quot;org_name&quot;:&quot;深圳市华昊咨询有限公司&quot;,&quot;org_uuid&quot;:&quot;6dabd414-490e-1330-d302-8a2b00d37b6e&quot;,&quot;org_role&quot;:&quot;ER0003&quot;,&quot;win_amount&quot;:null}]</field>
+						<field name="subject_matter">南昌工程学院财经实验中心及招生机房设备采购项目(招标编号:HHZBJX15018-A-2)</field>
+						<field name="content">&lt;table id=&quot;tblInfo&quot; cellspacing=&quot;1&quot; cellpadding=&quot;1&quot; align=&quot;center&quot; border=&quot;0&quot;&gt;&lt;tr&gt;&lt;td id=&quot;tdTitle&quot; align=&quot;center&quot;&gt;&lt;b&gt;&lt;span id=&quot;lblTitle&quot;&gt;深圳市华昊咨询有限公司关于江西省南昌工程学院财经实验中心及招生机房设备采购项目 (招标编号：HHZBJX15018-A-2)第二次竞争性谈判废标公告&lt;/span&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;hr size=&quot;1&quot;&gt;
+													【信息发布时间：2015/5/6  阅读次数：
+													44】&lt;a href=&quot;&quot;&gt;【我要打印】&lt;/a&gt;&lt;a href=&quot;&quot;&gt;【关闭】&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td height=&quot;10&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td id=&quot;TDContent&quot; height=&quot;250&quot; valign=&quot;top&quot; class=&quot;infodetail&quot;&gt;&lt;p&gt;&lt;span id=&quot;spnShow&quot;&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;a name=&quot;OLE_LINK3&quot;&gt;&lt;/a&gt;&lt;a name=&quot;OLE_LINK1&quot;&gt;&lt;/a&gt;&lt;a name=&quot;OLE_LINK2&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;a name=&quot;OLE_LINK4&quot;&gt;&lt;/a&gt;&lt;a name=&quot;OLE_LINK3&quot;&gt;&lt;/a&gt;&lt;a name=&quot;OLE_LINK1&quot;&gt;&lt;/a&gt;&lt;a name=&quot;OLE_LINK2&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;根据江西省政府采购工作领导小组办公室下达的赣购&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;2015B182&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;号采购计划，深圳市华昊咨询有限公司受南昌工程学院委托，就南昌工程学院财经实验中心及招生机房设备采购项目&lt;span&gt; (&lt;/span&gt;招标编号：&lt;span&gt;HHZBJX15018-A-2)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;进行第二次竞争性谈判方式采购&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;。开标仪式于&lt;span&gt;2015&lt;/span&gt;年&lt;span&gt;5&lt;/span&gt;月&lt;span&gt;6&lt;/span&gt;日&lt;span&gt;09:30&lt;/span&gt;时在江西省南昌南昌市庐山南大道&lt;span&gt;1999&lt;/span&gt;号保利国际高尔夫花园&lt;span&gt;9#&lt;/span&gt;写字楼&lt;span&gt;316&lt;/span&gt;室开标厅举行。至递交应答文件截止时间止，有效供应商不足三家，故此项目废标。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;采购单位：&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;南昌工程学院&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;采购单位联系电话：&lt;span&gt;0791-82196892&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;招标代理机构联系人：刘霞&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;招标代理机构联系电话：&lt;span&gt;0791-86899377&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; align=&quot;right&quot;&gt;&lt;span&gt;&lt;span&gt;深圳市华昊咨询有限公司&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</field>
+						<field name="content_format">  深圳市华昊咨询有限公司关于江西省南昌工程学院财经实验中心及招生机房设备采购项目 (招标编号：HHZBJX15018-A-2)第二次竞争性谈判废标公告   【信息发布时间：2015/5/6 阅读次数： 44】【我要打印】【关闭】         根据江西省政府采购工作领导小组办公室下达的赣购2015B182号采购计划，深圳市华昊咨询有限公司受南昌工程学院委托，就南昌工程学院财经实验中心及招生机房设备采购项目 (招标编号：HHZBJX15018-A-2)进行第二次竞争性谈判方式采购。开标仪式于2015年5月6日09:30时在江西省南昌南昌市庐山南大道1999号保利国际高尔夫花园9#写字楼316室开标厅举行。至递交应答文件截止时间止，有效供应商不足三家，故此项目废标。    采购单位：南昌工程学院  采购单位联系电话：0791-82196892  招标代理机构联系人：刘霞  招标代理机构联系电话：0791-86899377        深圳市华昊咨询有限公司      </field>
+				</row>
+		</table_data>
+	</database>
+</mysqldump>

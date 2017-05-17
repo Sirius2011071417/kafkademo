@@ -1,0 +1,8 @@
+com/kafkademo/XMLProducer.class
+com/util/Object2Array.class
+com/kafkademo/Producer.class
+com/kafkademo/KafkaConsumerProducerDemo.class
+com/kafkademo/Consumer.class
+com/kafkademo/KafkaConsumerRunner1.class
+com/kafkademo/KafkaProducerRunner.class
+com/kafkademo/ConsumerRunner.class
