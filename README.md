@@ -1,9 +1,10 @@
-﻿# kafkademo
+﻿﻿# kafkademo
 
 ## Usage
 ### Producer
 ```cd kafkademo```
 ```java -jar kafkademo-0.0.1-Producer.jar producer.properties```
+
 ```
 output:
     producer begin......server: localhost:9092, topic: topic_1, key.serializer: Long, value.serializer: String
