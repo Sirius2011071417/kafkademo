@@ -2,6 +2,7 @@
 
 ## Usage
 ### Producer
+```cd kafkademo```
 ```java -jar kafkademo-0.0.1-Producer.jar producer.properties```
 ```
 output:
@@ -13,6 +14,7 @@ output:
 ```
 
 ### Consumer
+```cd kafkademo```
 ```java -jar kafkademo-0.0.1-Consumer.jar producer.properties```
 ```
 output:
@@ -22,7 +24,7 @@ output:
     offset = 2, partition = 0,key = 2, value = {info_type=C06001, public_date
 ```
 
-##Config
+## Config
 ### producer.properties
 ```
 kafka_host=localhost:9092
